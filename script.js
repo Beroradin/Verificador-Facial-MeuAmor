@@ -11,7 +11,7 @@ let referenceDescriptor;
 
 // Define o limite de distância. 
 // Valores menores que isso são considerados o "mesmo rosto".
-const FACE_MATCH_THRESHOLD = 0.48;
+const FACE_MATCH_THRESHOLD = 0.49;
 
 // Função Principal
 async function initialize() {
