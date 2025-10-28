@@ -97,9 +97,9 @@ async function handleImageUpload(event) {
 
         // 4. Mostra o resultado
         if (distance < FACE_MATCH_THRESHOLD) {
-            updateStatus(`É a Pessoa X! (Distância: ${distance.toFixed(3)})`, 'success');
+            updateStatus(`É o amor da minha vida! (Distância: ${distance.toFixed(3)})`, 'success');
         } else {
-            updateStatus(`NÃO é a Pessoa X. (Distância: ${distance.toFixed(3)})`, 'error');
+            updateStatus(`NÃO é o amor da minha vida. (Distância: ${distance.toFixed(3)})`, 'error');
         }
         
         // Limpa o input para permitir o envio da mesma foto novamente (útil para testes)
