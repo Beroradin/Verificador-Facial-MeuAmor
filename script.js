@@ -6,15 +6,14 @@ const refImage = document.getElementById('refImage');
 // Caminho para a pasta de modelos
 const MODEL_URL = './models';
 
-// Esta variável vai guardar o "descritor facial" da Pessoa X
+// Esta variável vai guardar o "descritor facial"
 let referenceDescriptor;
 
 // Define o limite de distância. 
 // Valores menores que isso são considerados o "mesmo rosto".
-// Você pode ajustar este valor (ex: 0.45, 0.5) para ficar mais ou menos rígido.
 const FACE_MATCH_THRESHOLD = 0.48;
 
-// --- FUNÇÃO PRINCIPAL: É EXECUTADA QUANDO A PÁGINA ABRE ---
+// Função Principal
 async function initialize() {
     try {
         // 1. Carrega os modelos de IA
